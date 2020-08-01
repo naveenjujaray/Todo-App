@@ -8,7 +8,7 @@ export default class Home extends Component {
 		super(props);
 		this.state = {
 			task: '',
-			list: ['Check it out in GitHub', 'Made with ❤️ by Alyssa X', 'Try making a new task above 👆', 'Build your own!'],
+			list: ['Check it out on GitHub', 'Made with ❤️ by Naveen Jujaray', 'Try making a new task above 👆', 'Build your own!'],
 			done: []
 		};
 		this.handleClick = this.handleClick.bind(this);
