@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html {
+	height: 100%!important;
+	overflow-x: hidden;
+}
+.header {
+	height: 100%!important;
+	padding-top: 100px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+body {
+	background: linear-gradient(-235deg, #a94dff, #a17eff, #80acff, #87ffab,#fffd8a,#ffb685,rgb(255, 145, 145));
+	background-size: 400% 400%;
+	animation: gradient 3s ease infinite;
+	background-attachment: fixed;
+	margin: 0px;
+	height: 100%!important;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#link{
+	text-decoration: none;
+	color: rgba(0,0,0,0.2);
+}
+h1 {
+	font-family: 'Roboto';
+	font-size: 30px;
+	color: #000;
+	margin-top: 0px!important;
+	margin-bottom: 30px;
+}
+li {
+	color: #000;
+	display: inline-table;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	font-weight: regular;
+	font-family: 'Roboto';
+	font-size: x-large;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	width: 400px;
+	padding: 0px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+ul {
+	text-align: left;
+	padding: 0px;
+}
+input {
+	background-color: rgba(194, 210, 255, 0.4);
+	border: solid 1.5px #4D1366;
+	height: 50px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	width: 400px;
+	padding: 0px;
+	color: #000;
+	font-weight: 600;
+	font-size: 20px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-indent: 30px;
+	margin-bottom: 20px;
+}
+::placeholder {
+	color: rgb(0,0,0,0.5);
+}
+input:focus, button:focus {
+	outline: none;
+}
+button {
+	cursor: pointer;
+	position: absolute;
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border: solid 1.5px #4D1366;
+	background-color:rgba(194, 210, 255, 0.4);
+	padding: 0px;
+	margin: 0px;
+	color: rgb(0, 0, 0);
+	transition: all .3s cubic-bezier(.8,.03,.25,1);
+}
+button:hover {
+	
+	font-size: 30px;
+	color: rgb(41, 255, 41);
+}
+p {
+	color: #FFF;
+	font-family: 'Roboto';
+	text-align: left;
+	font-size: x-large;
+	opacity: 1;
+}
+.check, .cross {
+	opacity: .5;
+	margin-bottom: -5px;
+	transition: opacity .3s cubic-bezier(.8,.03,.25,1);
+	cursor: pointer;
+}
+.check:hover, .cross:hover {
+	opacity: 1;
+	width: 30px;
+	height: 30px;
+}
+.check {
+	margin-right: 10px;
+}
+.done {
+	opacity: .5;
+	text-decoration: line-through;
+}
+@media only screen and (max-width: 700px) {
+	.header {
+		padding-left: 10vw;
+	}
+	input {
+		width: 80%;
+	}
+}
+
+/*!
+ * "Fork me on GitHub" CSS ribbon v0.2.3 | MIT License
+ * https://github.com/simonwhitaker/github-fork-ribbon-css
+*/
+
+.github-fork-ribbon {
+	width: 12.1em;
+	height: 12.1em;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	right: 0;
+	z-index: 9999;
+	pointer-events: none;
+	font-size: 13px;
+	text-decoration: none;
+	text-indent: -999999px;
+  }
+  
+  .github-fork-ribbon.fixed {
+	position: fixed;
+  }
+  
+  .github-fork-ribbon:hover, .github-fork-ribbon:active {
+	background-color: rgba(0, 0, 0, 0.0);
+  }
+  
+  .github-fork-ribbon:before, .github-fork-ribbon:after {
+	/* The right and left classes determine the side we attach our banner to */
+	position: absolute;
+	display: block;
+	width: 15.38em;
+	height: 1.54em;
+  
+	top: 3.23em;
+	right: -3.23em;
+  
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+  
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+  
+  .github-fork-ribbon:before {
+	content: "";
+  
+	/* Add a bit of padding to give some substance outside the "stitching" */
+	padding: .38em 0;
+  
+	/* Set the base colour */
+	background-color: rgb(0, 0, 0);
+  
+	/* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+  
+	/* Add a drop shadow */
+	-webkit-box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 .15em .23em 0 rgba(0, 0, 0, 0.5);
+  
+	pointer-events: auto;
+  }
+  
+  .github-fork-ribbon:after {
+	/* Set the text from the data-ribbon attribute */
+	content: attr(data-ribbon);
+  
+	/* Set the text properties */
+	color: #fff;
+	font: 700 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.54em;
+	text-decoration: none;
+	text-shadow: 0 -.08em rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-indent: 0;
+  
+	/* Set the layout properties */
+	padding: .15em 0;
+	margin: .15em 0;
+  
+	/* Add "stitching" effect */
+	border-width: .08em 0;
+	border-style: dotted;
+	border-color: #fff;
+	border-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .github-fork-ribbon.left-top, .github-fork-ribbon.left-bottom {
+	right: auto;
+	left: 0;
+  }
+  
+  .github-fork-ribbon.left-bottom, .github-fork-ribbon.right-bottom {
+	top: auto;
+	bottom: 0;
+  }
+  
+  .github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-bottom:after {
+	right: auto;
+	left: -3.23em;
+  }
+  
+  .github-fork-ribbon.left-bottom:before, .github-fork-ribbon.left-bottom:after, .github-fork-ribbon.right-bottom:before, .github-fork-ribbon.right-bottom:after {
+	top: auto;
+	bottom: 3.23em;
+  }
+  
+  .github-fork-ribbon.left-top:before, .github-fork-ribbon.left-top:after, .github-fork-ribbon.right-bottom:before, .github-fork-ribbon.right-bottom:after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+  }
