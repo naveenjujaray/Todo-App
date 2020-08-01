@@ -43,8 +43,7 @@ $ “scripts”: {
     "build": "react-scripts build",
     }
 
-#  Create a remote GitHub repository
-(Skip this step if your remote GitHub repository is already initialized)
+#  Create a remote GitHub repository (Skip this step if your remote GitHub repository is already initialized)
 $ git init
 $ git remote add origin your-github-repository-url.git
 
